@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="googlebot" content="noindex, nofollow">
+<title>Diagnóstico digital — Asthetik · Dra. Paula Backer · Fontes Ads</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+  /* ====== CONFIGURAÇÃO ====== */
+  const EDSON_WHATSAPP = "EDSON_WHATSAPP";   // só números, com DDI. Ex.: 5521999999999
+  const MENSAGEM_WHATSAPP = "Oi, Edson! Vi o diagnóstico da Dra. Paula Backer e quero marcar uma conversa.";
+</script>
+<style>
+  :root{
+    --bg:#faf7f4; --card:#ffffff; --ink:#1f1a24; --muted:#6b6472; --line:#ece6e1;
+    --brand:#7a3e6c; --brand2:#c0789f; --soft:#f6ecf2;
+    --ok:#1f8a5b; --okbg:#e7f5ee; --warn:#b4690e; --warnbg:#fdf1e2; --info:#5b5f7a; --infobg:#eef0f6;
+    --radius:18px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:980px;margin:0 auto;padding:0 20px}
+  /* HERO */
+  .hero{background:linear-gradient(135deg,#3d1f3a 0%,var(--brand) 55%,var(--brand2) 100%);color:#fff;padding:44px 0 88px;position:relative;overflow:hidden}
+  .hero:after{content:"";position:absolute;right:-120px;top:-120px;width:340px;height:340px;border-radius:50%;background:rgba(255,255,255,.08)}
+  .tag{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;background:rgba(255,255,255,.15);padding:6px 12px;border-radius:999px}
+  .hero h1{font-size:clamp(28px,6vw,46px);line-height:1.12;font-weight:800;margin:18px 0 10px;letter-spacing:-.02em}
+  .hero h1 span{opacity:.75;font-weight:600}
+  .hero p.lead{font-size:clamp(16px,2.4vw,19px);max-width:640px;opacity:.95}
+  .meta{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:22px;font-size:14px;opacity:.9}
+  .meta b{font-weight:700}
+  .quote{margin-top:26px;border-left:3px solid rgba(255,255,255,.6);padding:4px 0 4px 14px;font-style:italic;font-size:15px;opacity:.92;max-width:560px}
+  /* SECTIONS */
+  section{padding:34px 0}
+  .h2{font-size:clamp(22px,4vw,30px);font-weight:800;letter-spacing:-.01em;margin-bottom:6px}
+  .sub{color:var(--muted);margin-bottom:22px;max-width:680px}
+  .snap{margin-top:-64px;position:relative;z-index:2}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 18px 16px;box-shadow:0 6px 24px rgba(61,31,58,.06)}
+  .card .lbl{font-size:12.5px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.05em}
+  .card .val{font-size:26px;font-weight:800;margin:6px 0 4px;letter-spacing:-.01em;line-height:1.15}
+  .card .det{font-size:13.5px;color:var(--muted)}
+  .pill{display:inline-block;font-size:11.5px;font-weight:700;padding:3px 9px;border-radius:999px;margin-top:10px}
+  .ok .pill{background:var(--okbg);color:var(--ok)}
+  .warn .pill{background:var(--warnbg);color:var(--warn)}
+  .info .pill{background:var(--infobg);color:var(--info)}
+  .warn{border-top:4px solid var(--warn)} .ok{border-top:4px solid var(--ok)} .info{border-top:4px solid #a7abc4}
+  .list{display:grid;gap:14px}
+  .item{display:flex;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+  .num{flex:0 0 38px;height:38px;border-radius:12px;background:var(--soft);color:var(--brand);font-weight:800;display:flex;align-items:center;justify-content:center}
+  .item h3{font-size:17px;margin-bottom:4px}
+  .item p{color:#423b48;font-size:15px}
+  .opps{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+  .opp{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+  .opp .ic{font-size:26px}
+  .opp h3{font-size:17px;margin:8px 0 6px}
+  .opp p{font-size:15px;color:#423b48}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;counter-reset:s}
+  @media (max-width:860px){.steps{grid-template-columns:1fr 1fr}}
+  @media (max-width:640px){.opps{grid-template-columns:1fr}}
+  .step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;position:relative}
+  .step:before{counter-increment:s;content:counter(s);display:flex;width:34px;height:34px;border-radius:50%;background:var(--brand);color:#fff;font-weight:800;align-items:center;justify-content:center;margin-bottom:10px}
+  .step h3{font-size:16px;margin-bottom:4px}
+  .step p{font-size:14.5px;color:#423b48}
+  .invest{background:var(--soft);border:1px dashed var(--brand2);border-radius:var(--radius);padding:26px}
+  .invest h3{font-size:20px;margin-bottom:8px;color:var(--brand)}
+  .cta{background:linear-gradient(135deg,#3d1f3a,var(--brand));color:#fff;border-radius:24px;padding:34px 24px;text-align:center}
+  .cta h2{font-size:clamp(22px,4vw,30px);font-weight:800;margin-bottom:8px}
+  .cta p{opacity:.9;max-width:560px;margin:0 auto 22px}
+  .btn{display:inline-flex;align-items:center;gap:10px;background:#25d366;color:#0b3d22;font-weight:800;font-size:17px;text-decoration:none;padding:16px 26px;border-radius:999px;box-shadow:0 8px 24px rgba(37,211,102,.35);transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn svg{width:22px;height:22px}
+  footer{padding:28px 0 40px;color:var(--muted);font-size:12.5px}
+  footer p{margin-bottom:6px}
+  .brand{font-weight:800;color:var(--brand)}
+  @media (max-width:520px){
+    .steps{grid-template-columns:1fr}
+    .hero{padding:32px 0 80px}
+    .card .val{font-size:23px}
+    .cards{grid-template-columns:1fr 1fr}
+    .card{padding:14px}
+    .card .det{font-size:12.5px}
+    .item{padding:16px;gap:12px}
+  }
+  @media (max-width:360px){.cards{grid-template-columns:1fr}.steps{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="tag">Diagnóstico personalizado</span>
+    <h1>Diagnóstico digital <span>—</span> Asthetik · Dra. Paula Backer</h1>
+    <p class="lead">Olá, Paula! Dei uma olhada com carinho em como o seu trabalho aparece hoje no Instagram e no Google. Você já tem uma audiência grande, e dá para transformar isso em muito mais agendamentos de harmonização e laser.</p>
+    <div class="meta">
+      <div>Preparado por <b>Edson Fontes · Fontes Ads</b></div>
+      <div>Data: <b>7 de novembro de 2026</b></div>
+      <div>Perfil analisado: <b>@dra.paula.backer</b></div>
+    </div>
+    <p class="quote">“Não vendemos cliques. Transformamos investimento em oportunidades reais de negócio.”</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="snap" aria-label="Resumo">
+    <div class="cards">
+      <div class="card ok"><div class="lbl">Seguidores</div><div class="val">26,8 mil</div><div class="det">Base grande, construída com o seu trabalho</div><span class="pill">Ponto forte</span></div>
+      <div class="card warn"><div class="lbl">Frequência</div><div class="val">1 post / 30 dias</div><div class="det">Último post em 17 out.; stories ativos</div><span class="pill">Oportunidade</span></div>
+      <div class="card warn"><div class="lbl">Curtidas por post</div><div class="val">≈ 32</div><div class="det">Média dos 6 posts recentes (8 a 57). Engajamento estimado ≈ 0,12% dos seguidores</div><span class="pill">Estimativa</span></div>
+      <div class="card warn"><div class="lbl">Visualizações dos Reels</div><div class="val">330 a 80,4 mil</div><div class="det">Um Reels passou de 80 mil; 3 dos 6 ficaram abaixo de 4 mil</div><span class="pill">Oportunidade</span></div>
+      <div class="card warn"><div class="lbl">Anúncios</div><div class="val">Não vistos</div><div class="det">O Instagram não mostra “Anúncios ativos” no perfil (isso não garante que não haja)</div><span class="pill">Oportunidade</span></div>
+      <div class="card warn"><div class="lbl">Google</div><div class="val">4,7 ★ · ~9</div><div class="det">Nota e nº de avaliações aproximados; a avaliação mais recente vista é de jul. 2023. A confirmar na ficha atual</div><span class="pill">Aprox.</span></div>
+      <div class="card warn"><div class="lbl">Site próprio</div><div class="val">Não encontrado</div><div class="det">Na ficha do Google, o campo de site aponta para o Instagram</div><span class="pill">Oportunidade</span></div>
+      <div class="card info"><div class="lbl">Rastreio (Pixel / GA4)</div><div class="val">A verificar</div><div class="det">Sem site próprio encontrado, não foi possível conferir</div><span class="pill">A verificar</span></div>
+      <div class="card info"><div class="lbl">WhatsApp</div><div class="val">A verificar</div><div class="det">Número encontrado em diretório; botão e link não confirmados</div><span class="pill">A verificar</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="h2">O que encontramos</h2>
+    <p class="sub">Um olhar rápido e honesto sobre como a Dra. Paula Backer aparece hoje na internet.</p>
+    <div class="list">
+      <div class="item"><div class="num">1</div><div><h3>Seu conteúdo já provou que funciona</h3><p>Um dos seus Reels chegou a <strong>80,4 mil visualizações</strong>, e outros dois passaram de 11 mil. Harmonização facial, laser e antes e depois chamam atenção.</p></div></div>
+      <div class="item"><div class="num">2</div><div><h3>Mas pouca gente está interagindo</h3><p>Os posts recentes ficaram entre <strong>8 e 57 curtidas</strong>, perto de 0,12% dos <strong>26,8 mil seguidores</strong> (estimativa). Com pouca interação, o Instagram mostra seus posts para menos gente.</p></div></div>
+      <div class="item"><div class="num">3</div><div><h3>O feed desacelerou</h3><p>Foi <strong>1 post nos últimos 30 dias</strong> (último em 17 out.), apesar dos stories ativos. Anúncios mantêm a agenda cheia mesmo nas semanas em que não dá para postar.</p></div></div>
+      <div class="item"><div class="num">4</div><div><h3>Hoje o alcance depende só do orgânico</h3><p>Não vimos anúncios ativos no seu perfil. Quem procura harmonização ou laser em Niterói e ainda não te conhece dificilmente vai te achar por acaso.</p></div></div>
+      <div class="item"><div class="num">5</div><div><h3>Google pouco aproveitado</h3><p>A ficha mostra <strong>nota 4,7 com cerca de 9 avaliações</strong> (aproximado), e não encontramos site próprio. Para quem pesquisa no Google, isso pesa na hora de escolher.</p></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="h2">O que dá para melhorar</h2>
+    <p class="sub">Oportunidades práticas para transformar quem já vê o seu trabalho em clientes agendadas.</p>
+    <div class="opps">
+      <div class="opp"><div class="ic">📣</div><h3>Anúncios no Instagram e Facebook</h3><p>Impulsionar os Reels que já performam (como o de 80 mil views) para mulheres de Icaraí e Niterói, com as conversas caindo direto no seu WhatsApp.</p></div>
+      <div class="opp"><div class="ic">📍</div><h3>Google Ads + Google Meu Negócio</h3><p>Aparecer para quem pesquisa harmonização facial e laser em Niterói, com a ficha atualizada (fotos, serviços, link certo) e mais avaliações de pacientes.</p></div>
+      <div class="opp"><div class="ic">🖥️</div><h3>Página de agendamento</h3><p>Uma página própria com seus procedimentos, antes e depois e botão de WhatsApp, para o Google e os anúncios terem um destino profissional.</p></div>
+      <div class="opp"><div class="ic">🎯</div><h3>Rastreio (Pixel + GA4)</h3><p>Saber qual anúncio trouxe cada paciente, para investir no que gera agendamento, e não só curtida.</p></div>
+      <div class="opp"><div class="ic">💬</div><h3>WhatsApp organizado (CRM com painel de leads)</h3><p>Cada contato registrado num painel, com acompanhamento e lembrete de retorno, para nenhuma interessada ficar sem resposta.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="h2">Como funciona</h2>
+    <p class="sub">Simples, sem complicação técnica para você. A gente cuida da parte chata.</p>
+    <div class="steps">
+      <div class="step"><h3>Conversa rápida</h3><p>Uns 15 minutos online, por chamada de vídeo, para entender seus objetivos e os tratamentos que mais quer vender.</p></div>
+      <div class="step"><h3>Plano sob medida</h3><p>Monto o plano e deixo tudo pronto: contas de anúncio, rastreio e ficha do Google organizadas.</p></div>
+      <div class="step"><h3>Anúncios no ar</h3><p>Campanhas para o público certo da sua região, com mensagens chegando direto no seu WhatsApp.</p></div>
+      <div class="step"><h3>Acompanhamento</h3><p>Relatório simples, sem termos técnicos: quanto investiu, quantas mensagens e quantas viraram clientes.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="invest">
+      <h3>Investimento</h3>
+      <p>Cada negócio tem uma realidade diferente, então a proposta é montada sob medida: o valor e o formato do trabalho a gente define junto, na nossa conversa, de acordo com os seus objetivos e o quanto você quer investir em anúncios.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="cta">
+      <h2>Vamos conversar 15 minutinhos?</h2>
+      <p>Te mostro esse diagnóstico com calma e o que eu faria primeiro no seu caso. Sem compromisso.</p>
+      <a id="cta" class="btn" href="https://wa.me/?text=Oi%2C%20Edson%21%20Vi%20o%20diagn%C3%B3stico%20da%20Dra.%20Paula%20Backer%20e%20quero%20marcar%20uma%20conversa." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.1.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg>
+        Quero conversar no WhatsApp
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p><span class="brand">Fontes Ads</span> · Gestão de tráfego, rastreio e Google Meu Negócio · Niterói/RJ</p>
+  <p>Dados públicos levantados em 7 nov. 2026 (Instagram e Google). Os números podem variar e os itens marcados como “a verificar” serão confirmados junto com você.</p>
+  <p>Página privada, feita só para Asthetik · Dra. Paula Backer. Não é indexada em buscadores.</p>
+</footer>
+
+<script>
+  (function(){
+    var n = String(EDSON_WHATSAPP).replace(/\D/g,"");
+    if(n){ document.getElementById("cta").href = "https://wa.me/" + n + "?text=" + encodeURIComponent(MENSAGEM_WHATSAPP); }
+  })();
+</script>
+</body>
+</html>
